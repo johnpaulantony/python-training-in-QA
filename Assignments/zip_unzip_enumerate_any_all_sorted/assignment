@@ -1,0 +1,92 @@
+zip, unzip, enumerate, any, all, sorted
+
+
+Use Case-Based Questions
+A. zip / unzip
+Customer Data Merge
+Given two lists: customer_names = ['Alice', 'Bob'] and customer_ids = [101, 102], how can you combine them into pairs?
+Input: ['Alice', 'Bob'], [101, 102]
+Expected Output: [('Alice', 101), ('Bob', 102)]
+
+Product Mapping
+Unzip a list of tuples like [('Laptop', 50000), ('Phone', 30000)] into separate lists.
+Expected Output: Products: ['Laptop', 'Phone'], Prices: [50000, 30000]
+
+Match Scores to Players
+Combine players = ['Rahul', 'Virat'] with scores = [45, 78].
+Expected Output: [('Rahul', 45), ('Virat', 78)]
+
+Inventory Pairing
+Zip two lists of items and quantities: items = ['Pen', 'Book'], qty = [10, 20].
+Expected Output: [('Pen', 10), ('Book', 20)]
+
+Unzip Weather Data
+Given: weather_data = [('Monday', 30), ('Tuesday', 32)], extract days and temperatures.
+Expected Output: Days: ['Monday', 'Tuesday'], Temps: [30, 32]
+
+B. enumerate
+Student Rank Display
+Print students with their rank from a list ['Alice', 'Bob'].
+Expected Output: 1. Alice, 2. Bob
+
+Survey Form Tracker
+You track which question users answered using enumeration.
+Input: Questions = ['Q1', 'Q2']
+Expected Output: Indexes with questions
+
+Error Line Finder
+In logs, use enumeration to identify the line number of errors.
+Output: Error at line 3
+
+Product List Printer
+List ['Table', 'Chair'] with serial numbers.
+Expected Output: 1: Table, 2: Chair
+
+Menu Generator
+For menu = ['Pizza', 'Burger'], print with numbering.
+Expected Output: 1. Pizza, 2. Burger
+
+C. any / all
+Password Check
+Check if any character in a password is a digit.
+Input: 'abc1'
+Expected Output: True
+
+All Items in Stock
+Check if all items in stock = [True, True, False] are available.
+Expected Output: False
+
+Survey Completion
+responses = [True, True, True] – Have all users completed the survey?
+Expected Output: True
+
+Login Attempts
+If any password attempt in a list is correct, grant access.
+Expected Output: True if at least one is correct
+
+Sensor Alerts
+Trigger an alert if any sensor reports danger: [0, 1, 0].
+Expected Output: True
+
+D. sorted
+Marks Sorting
+Sort student marks [45, 22, 88, 67].
+Expected Output: [22, 45, 67, 88]
+
+Sort Employees by Salary
+Given a list of (name, salary) tuples, sort by salary.
+Input: [('A', 5000), ('B', 3000)]
+Expected Output: [('B', 3000), ('A', 5000)]
+
+Alphabetical Sorting
+Sort names ['Charlie', 'Bob', 'Alice'].
+Expected Output: ['Alice', 'Bob', 'Charlie']
+
+Sort by Length
+Sort products ['TV', 'Refrigerator', 'AC'] by name length.
+Expected Output: ['TV', 'AC', 'Refrigerator']
+
+Sort in Descending Order
+Sort [2, 9, 1] in reverse.
+Expected Output: [9, 2, 1]
+
