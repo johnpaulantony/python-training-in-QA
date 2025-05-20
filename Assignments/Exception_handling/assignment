@@ -1,0 +1,25 @@
+Exception Handling
+
+Use Case-Based Questions
+Divide Sales by Region Count
+Given sales = 1000 and regions = 0, avoid crash during division.
+Expected Output: Handle ZeroDivisionError, display safe message
+
+File Read Failure
+If a user tries to open a file that doesn’t exist.
+Input: File name = "data.txt"
+Expected Output: Handle FileNotFoundError gracefully
+
+Input Validation
+User enters text instead of number for age.
+Input: 'twenty'
+Expected Output: Handle ValueError
+
+Database Connection Fail
+When database credentials are wrong, show custom error.
+Expected Output: "Database connection failed."
+
+List Access
+Accessing an index in a list that doesn’t exist.
+Input: index = 10, list size = 5
+Expected Output: Catch IndexError
