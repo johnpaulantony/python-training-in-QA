@@ -1,0 +1,23 @@
+File Handling in Python
+
+Use Case-Based Questions
+Employee Attendance Tracker
+Store daily check-in details in a .txt file.
+Input: Name: Alice, Time: 9 AM
+Expected Output: Line added in file: "Alice - 9 AM"
+
+Read Product List
+Open a file products.txt and display the contents.
+Expected Output: Print each line (product)
+
+Write Report Data
+Generate a report and write content like "Total Sales: $1000".
+Expected Output: File created or overwritten with data
+
+Append to Log File
+Add "Session ended at 6PM" to existing log.txt.
+Expected Output: New line appended
+
+Count Words in Feedback File
+Open a file feedback.txt, count total words in it.
+Expected Output: Total words = 150
