@@ -1,0 +1,26 @@
+**Scope of Variables (Local, Global, Nonlocal)**
+
+Use Case-Based Questions
+Banking Application
+A calculate_interest function calculates interest based on a global variable rate. If the global rate = 5, and calculate_interest uses a local rate = 10, what value will be used inside the function?
+Input: Global rate = 5, Local rate = 10
+Expected Output: Interest calculated using 10
+
+Hotel Booking System
+Inside a function, you declare a variable discount = 10, but a global discount = 5 also exists. After the function runs, what is the value of discount when accessed outside the function?
+Input: Inside function: 10, Global: 5
+Expected Output: Outside value = 5
+
+E-commerce Discount Logic
+In a nested function, the outer function declares promo_code = 'NEW50', and the inner one modifies it. Which scope allows the inner function to change the outer promo_code?
+Input: promo_code modified inside inner function
+Expected Output: Use of nonlocal keyword allows change
+
+Student Grading System
+A global variable passing_marks = 35 is accessed inside evaluate_student() without redefining it.
+Input: Student score = 40
+Expected Output: Result = Pass
+
+Variable Shadowing in Inventory App
+If a global stock_count = 100 is shadowed inside check_stock() as stock_count = 50, what value will be printed from within and outside the function?
+Expected Output: Inside: 50, Outside: 100
