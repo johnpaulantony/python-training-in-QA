@@ -21,3 +21,164 @@ Expected Output: New line appended
 Count Words in Feedback File
 Open a file feedback.txt, count total words in it.
 Expected Output: Total words = 150
+
+
+1. Log File Analyzer
+
+Scenario: A server generates logs daily. You need to analyze and extract error messages.
+
+Input: server_log.txt
+
+INFO: User logged in
+ERROR: Database connection failed
+INFO: Scheduled job started
+ERROR: File not found
+
+Task: Read the log file and extract only lines that start with ERROR.
+
+Expected Output:
+
+ERROR: Database connection failed
+ERROR: File not found
+
+
+
+---
+
+2. CSV File – Sales Report Summarizer
+
+Scenario: A retail store exports sales data as a .csv file daily. You need to calculate total sales for the day.
+
+Input: sales_report.csv
+
+Item,Quantity,Price
+Apple,2,50
+Banana,5,20
+Orange,3,30
+
+Task: Calculate total revenue: Quantity × Price for each row and sum them.
+
+Expected Output:
+
+Total Sales: ₹310
+
+
+
+---
+
+3. Read and Write Employee Records
+
+Scenario: An HR system stores employee details in a file. You need to add a new record without deleting the existing ones.
+
+Input: employee_data.txt (before)
+
+101,John Doe,HR
+102,Jane Smith,Finance
+
+New Record to Add: 103,Alan Walker,IT
+
+Expected Output: employee_data.txt (after)
+
+101,John Doe,HR
+102,Jane Smith,Finance
+103,Alan Walker,IT
+
+
+
+---
+
+4. Student Grades Updater
+
+Scenario: A teacher wants to update student marks in a .txt file.
+
+Input: grades.txt (before)
+
+Alice: 85
+Bob: 90
+Charlie: 78
+
+Task: Update Bob's grade to 95.
+
+Expected Output: grades.txt (after)
+
+Alice: 85
+Bob: 95
+Charlie: 78
+
+
+
+---
+
+5. Data Archival (Copy & Rename Files)
+
+Scenario: At the end of the day, your script needs to archive the current day's transaction file with a timestamp.
+
+Input: transactions.csv
+
+Task: Copy transactions.csv to transactions_2025-05-28.csv and delete the original file.
+
+Expected Output:
+
+New file created: transactions_2025-05-28.csv
+
+Original file transactions.csv is removed.
+
+
+
+
+---
+
+6. File Size and Type Validator
+
+Scenario: Before uploading documents, validate that the file is a .pdf and is under 2MB.
+
+Input: report.docx (3MB)
+
+Task: Check file type and size.
+
+Expected Output:
+
+Upload failed: Only .pdf files under 2MB are allowed.
+
+
+
+---
+
+7. JSON Configuration File Reader
+
+Scenario: A software system loads its configuration from a JSON file.
+
+Input: config.json
+
+{
+  "host": "localhost",
+  "port": 8080,
+  "debug": true
+}
+
+Task: Read and display configuration details.
+
+Expected Output:
+
+Server will start at localhost:8080 with debug mode ON.
+
+
+
+---
+
+8. Replace Sensitive Data in Text File
+
+Scenario: Mask credit card numbers in logs for compliance.
+
+Input: payment_log.txt
+
+Transaction ID: 1001, Card: 1234-5678-9876-5432
+Transaction ID: 1002, Card: 1111-2222-3333-4444
+
+Task: Replace card numbers with ****-****-****-5432.
+
+Expected Output:
+
+Transaction ID: 1001, Card: ****-****-****-5432
+Transaction ID: 1002, Card: ****-****-****-4444
+
