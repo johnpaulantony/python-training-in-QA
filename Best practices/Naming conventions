@@ -1,0 +1,157 @@
+naming conventions and best practices in Python:
+
+
+---
+
+✅ 1. Variables
+
+Use descriptive, lowercase names with underscores (snake_case).
+
+Avoid single-character names except for loop counters.
+
+Do not overwrite built-ins like list, str, sum, etc.
+
+
+✅ Examples:
+
+# Good
+customer_name = "John Doe"
+total_amount = 2500
+
+# Bad
+cn = "John Doe"
+list = [1, 2, 3]  # Overwrites built-in `list`
+
+
+---
+
+✅ 2. Functions
+
+Use snake_case.
+
+Function names should be verbs or verb phrases to indicate an action.
+
+Keep it descriptive and concise.
+
+
+✅ Examples:
+
+# Good
+calculate_total_price()
+get_customer_info()
+
+# Bad
+doStuff()
+calc()
+
+
+---
+
+✅ 3. Classes
+
+Use PascalCase (a.k.a. CamelCase with first letter capitalized).
+
+Should be nouns or noun phrases.
+
+
+✅ Examples:
+
+# Good
+class CustomerInfo:
+    pass
+
+class InvoiceGenerator:
+    pass
+
+# Bad
+class customerinfo:
+    pass
+
+class gen_invoice:
+    pass
+
+
+---
+
+✅ 4. Constants
+
+Use ALL_CAPS with underscores.
+
+Place constants at the top of the file or in a separate config.py.
+
+
+✅ Examples:
+
+PI = 3.14159
+MAX_RETRIES = 5
+
+
+---
+
+✅ 5. Modules and Files
+
+Use snake_case for filenames.
+
+Use descriptive names that reflect the module's purpose.
+
+
+✅ Examples:
+
+# Good filenames
+invoice_generator.py
+customer_utils.py
+
+# Bad filenames
+script1.py
+miscStuff.py
+
+
+---
+
+✅ 6. Method Names (inside classes)
+
+Same as functions: snake_case, and be action-oriented.
+
+If private, start with an underscore: _calculate_discount().
+
+
+
+---
+
+✅ 7. Naming Collections
+
+Use plural for lists or collections:
+
+
+customers = ['John', 'Paul']
+product_prices = [99.9, 149.5]
+
+
+---
+
+✅ 8. Use Meaningful Abbreviations (or Avoid)
+
+If you use abbreviations, make sure they are well-known or obvious.
+
+
+❌ Avoid:
+
+val = 100  # What value?
+
+✅ Prefer:
+
+discount_value = 100
+
+
+---
+
+✅ Summary of Naming Styles
+
+Element	    Style	        Example
+
+Variable	 snake_case	  total_price
+Function	 snake_case	  get_user_input()
+Class   	 PascalCase	  UserProfile
+Constant	 ALL_CAPS	    MAX_LIMIT
+File/Module	snake_case	 dat,a_processor.py
+Private Method _snake_case	_compute_total()
