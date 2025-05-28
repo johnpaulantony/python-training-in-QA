@@ -1,0 +1,144 @@
+ Scenario: ETL Project Using Core Python (No Pandas, No DB)
+
+🧩 Project: Process Customer Records from a CSV and Save Cleaned Data to a JSON File
+
+🔧 Goal:
+
+Extract customer records from a .csv file
+
+Transform the data: remove invalid emails and trim whitespace
+
+Load: save cleaned data into a .json file
+
+
+
+---
+
+📁 Project Structure Using Modules and Packages
+
+etl_core_python/
+│
+├── extract/
+│   ├── __init__.py
+│   └── csv_reader.py
+│
+├── transform/
+│   ├── __init__.py
+│   └── clean_email.py
+│   └── strip_fields.py
+│
+├── load/
+│   ├── __init__.py
+│   └── json_writer.py
+│
+├── utils/
+│   ├── __init__.py
+│   └── logger.py
+│
+├── main_etl.py
+
+
+---
+
+🟩 1. Module: extract/csv_reader.py
+
+✔️ Purpose: Read raw customer data from a .csv file
+
+Sample Input (data/customers.csv):
+
+id,name,email
+101, John Doe ,john@example.com
+102, Jane Smith,invalid-email
+103, ,noemail@example.com
+
+Expected Output (Python list of dicts):
+
+[
+  {"id": "101", "name": " John Doe ", "email": "john@example.com"},
+  {"id": "102", "name": "Jane Smith", "email": "invalid-email"},
+  {"id": "103", "name": "", "email": "noemail@example.com"}
+]
+
+
+
+---
+
+🟨 2. Module: transform/clean_email.py
+
+✔️ Purpose: Remove records with invalid emails (no "@" or ".com")
+
+Input:
+
+[
+  {"id": "101", "name": " John Doe ", "email": "john@example.com"},
+  {"id": "102", "name": "Jane Smith", "email": "invalid-email"},
+  {"id": "103", "name": "", "email": "noemail@example.com"}
+]
+
+Expected Output:
+
+[
+  {"id": "101", "name": " John Doe ", "email": "john@example.com"},
+  {"id": "103", "name": "", "email": "noemail@example.com"}
+]
+
+
+
+---
+
+🟨 3. Module: transform/strip_fields.py
+
+✔️ Purpose: Strip whitespace from name field
+
+Input:
+
+[
+  {"id": "101", "name": " John Doe ", "email": "john@example.com"},
+  {"id": "103", "name": "", "email": "noemail@example.com"}
+]
+
+Expected Output:
+
+[
+  {"id": "101", "name": "John Doe", "email": "john@example.com"},
+  {"id": "103", "name": "", "email": "noemail@example.com"}
+]
+
+
+
+---
+
+🟥 4. Module: load/json_writer.py
+
+✔️ Purpose: Save final cleaned list of dictionaries to a .json file
+
+Expected Output (output/cleaned_customers.json):
+
+[
+  {"id": "101", "name": "John Doe", "email": "john@example.com"},
+  {"id": "103", "name": "", "email": "noemail@example.com"}
+]
+
+
+
+---
+
+🎯 6. Main Script: main_etl.py
+
+✔️ Purpose: Coordinate the ETL process
+
+High-level Steps:
+
+1. Call read_csv() from csv_reader.py
+
+
+2. Pass data to clean_email.py → then to strip_fields.py
+
+
+3. Send final list to json_writer.py
+
+
+
+
+
+---
