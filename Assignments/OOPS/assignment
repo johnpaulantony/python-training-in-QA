@@ -1,0 +1,197 @@
+1. Class and Object
+Q1: Employee Directory
+Scenario: Create an Employee class.
+
+Input: Name="John", ID=101, Department="HR"
+
+Output: Employee John [ID: 101] from HR department
+
+Q2: Product Inventory
+Scenario: Create a Product class.
+
+Input: Name="Mouse", ID=201, Price=₹500
+
+Output: Product Mouse with ID 201 costs ₹500
+
+Q3: Course Enrollment
+Scenario: Create a Course class.
+
+Input: Name="Python Basics", Duration="6 Weeks"
+
+Output: Course Python Basics lasts for 6 Weeks
+
+Q4: Movie Database
+Scenario: Create a Movie class.
+
+Input: Title="Inception", Genre="Sci-fi", Rating=8.8
+
+Output: Movie: Inception | Genre: Sci-fi | Rating: 8.8
+
+🔹 2. Attributes (Instance and Class Attributes)
+Q1: Student Count
+Scenario: Track students in a class.
+
+Input: Students: Asha, Ravi
+
+Output: Total Students: 2
+
+Q2: Car Models
+Scenario: Track cars and their brand.
+
+Input: All cars are of brand="Toyota"
+
+Output:
+Car1 Model: Innova
+Car2 Model: Fortuner
+Brand (Class Attribute): Toyota
+
+Q3: Library Book Status
+Scenario: Book has title, author (instance) and library_name (class).
+
+Input: Book: "1984", "George Orwell"
+
+Output: Book 1984 by George Orwell available at City Central Library
+
+Q4: Online Orders
+Scenario: Track number of orders.
+
+Input: Create 3 orders.
+
+Output: Total Orders Placed: 3
+
+🔹 3. Inheritance
+Q1: Bank System
+Scenario: Base class: Account, Derived: SavingsAccount, CurrentAccount
+
+Input: Savings with interest=4%, Current with overdraft
+
+Output:
+
+Savings Account with 4% interest
+Current Account with overdraft enabled
+
+Q2: School Staff
+Scenario: Base: Staff, Derived: Teacher, Admin
+
+Input: Teacher teaches Math, Admin handles fees
+
+Output:
+
+Teacher: Math
+Admin: Fees management
+
+Q3: E-commerce Roles
+Scenario: Base: User, Derived: Buyer, Seller
+
+Input: Buyer views items, Seller adds products
+
+Output:
+Buyer Action: Browsing products
+Seller Action: Uploading items
+
+Q4: Transport System
+Scenario: Base: Transport, Derived: Bus, Train
+
+Input: Bus: 40 seats, Train: 300 seats
+
+Output:
+
+Bus - Seats: 40
+Train - Seats: 300
+
+🔹 4. Polymorphism (Method Overriding)
+Q1: Animal Sounds
+Scenario: Base: Animal, Derived: Dog, Cat
+
+Input: Dog makes "Woof", Cat makes "Meow"
+
+Output:
+Dog says: Woof
+Cat says: Meow
+
+Q2: Notification System
+Scenario: Method send() overridden in Email, SMS, Push
+
+Input: Email to "abc@example.com"
+
+Output: Sending Email to abc@example.com
+
+Q3: Drawing Shapes
+Scenario: Shape.draw() overridden in Circle, Rectangle
+
+Input: Draw circle, then rectangle
+
+Output:
+
+Drawing Circle...
+Drawing Rectangle...
+
+
+Q4: Tax Calculation
+Scenario: Base Employee, override calculate_tax() in FullTime, Contract
+
+Input: FullTime tax: 20%, Contract: 10%
+
+Output:
+
+FullTime Tax: ₹2000
+Contract Tax: ₹1000
+
+🔹 5. Dunder (Magic) Methods
+Q1: __str__() for Product
+Scenario: Custom string output.
+
+Input: Name="Phone", Price=₹20,000
+
+Output: Product: Phone | Price: ₹20000
+
+Q2: __len__() for Book Title
+Scenario: Return title length.
+
+Input: Title="The Silent Patient"
+
+Output: Length: 18
+
+Q3: __eq__() for Comparing Students
+Scenario: Compare if two students have the same ID.
+
+Input: Student1: ID=101, Student2: ID=101
+
+Output: Same student: True
+
+Q4: __add__() in Wallet
+Scenario: Add balances of two wallets.
+
+Input: Wallet1: ₹500, Wallet2: ₹1000
+
+Output: Combined Balance: ₹1500
+
+🔹 6. Abstract Class & Abstract Methods
+
+Q1: Payment System
+Scenario: Abstract class Payment, subclasses: Card, UPI
+
+Input: Pay ₹300 using UPI
+
+Output: Processing UPI payment of ₹300
+
+Q2: Document Format
+Scenario: Abstract Document, methods in PDF, Word
+
+Input: Save as PDF
+
+Output: Document saved as PDF
+
+Q3: Vehicle Engine
+Scenario: Abstract Vehicle, concrete Car, Bike with start_engine()
+
+Input: Start Car
+
+Output: Car engine started
+
+Q4: Shape Area
+Scenario: Abstract Shape with area() in Circle, Square
+
+Input: Radius=5 for Circle
+
+Output: Area of Circle: 78.5
