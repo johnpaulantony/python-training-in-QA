@@ -1,0 +1,8 @@
+2025-06-06 12:20:52,036 - ERROR - Row 2: Invalid email format - invalid_email@
+2025-06-06 12:20:52,036 - ERROR - Row 2: Invalid phone number - 12345
+2025-06-06 12:20:52,036 - ERROR - Row 2: Invalid postal code - 5600
+2025-06-06 12:20:52,036 - ERROR - Row 2: Invalid date format (expected YYYY-MM-DD) - 21-05-1990
+2025-06-06 12:20:52,042 - ERROR - Row 4: Invalid email format - bad@@mail.com
+2025-06-06 12:20:52,042 - ERROR - Row 4: Invalid phone number - 99999abc99
+2025-06-06 12:20:52,042 - ERROR - Row 4: Invalid postal code - ABCDE
+2025-06-06 12:20:52,042 - ERROR - Row 4: Invalid date format (expected YYYY-MM-DD) - 2023/01/01

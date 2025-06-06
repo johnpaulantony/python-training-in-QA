@@ -1,0 +1,25 @@
+{
+    "customers": [
+        {
+            "customer_id": 101,
+            "customer_name": "John Doe",
+            "email": "john@example.com",
+            "phone": "1234567890",
+            "join_date": "2022-01-01"
+        },
+        {
+            "customer_id": 102,
+            "customer_name": "Jane Smith",
+            "email": "jane@example.com",
+            "phone": "2345678901",
+            "join_date": "2022-02-15"
+        },
+        {
+            "customer_id": 103,
+            "customer_name": "Bob Lee",
+            "email": "",
+            "phone": "3456789012",
+            "join_date": "2022-03-10"
+        }
+    ]
+}
